@@ -6,7 +6,7 @@ It helps students study technical subjects through AI explanations, revision not
 
 ## 📸 Demo
 
-![AI Study Assistant](<img width="367" height="349" alt="Screenshot 2026-09-06 121617" src="https://github.com/user-attachments/assets/39a685f2-d9b5-4c0a-95cc-bc1aadf9be3c" />
+![AI Study Assistant]( <img width="367" height="349" alt="Screenshot 2026-09-06 121617" src="https://github.com/user-attachments/assets/39a685f2-d9b5-4c0a-95cc-bc1aadf9be3c" />
 )
 
 ---
