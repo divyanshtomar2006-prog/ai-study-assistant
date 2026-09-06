@@ -1,3 +1,7 @@
+## Demo
+
+![AI Study Assistant](screenshot.png)
+
 # 📚 AI Study Assistant
 
 A beginner-friendly AI-powered study assistant built with Python and a local Llama 3.2 model.
