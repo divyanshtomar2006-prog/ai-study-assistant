@@ -1,33 +1,69 @@
 # 📚 AI Study Assistant
 
-A beginner-friendly Python CLI study assistant designed to help students learn important concepts through explanations, key points, questions, and quizzes.
+A beginner-friendly AI-powered study assistant built with Python and a local Llama 3.2 model.
+
+The project helps students understand topics, generate revision notes, create practice questions, take AI-generated quizzes, track progress, and unlock achievements.
 
 ## ✨ Features
 
-- 📖 Simple topic explanations
-- 📝 Key points
-- ❓ Practice questions
-- 🎯 Interactive Quiz Mode
-- 📚 Multiple study topics
-- 🐍 Built with Python
+- 🤖 AI-powered explanations
+- 📝 AI revision notes
+- 💾 Save notes as `.txt` files
+- ❓ AI question generator
+- 🎯 AI-generated quizzes
+- 🎚️ Easy, Medium, and Hard difficulty
+- 🔁 Retry incorrect questions
+- 📊 Study progress dashboard
+- 📚 Per-topic progress tracking
+- 🏅 Achievement system
+- 💻 Command-line interface
+- 🔒 Runs AI locally using Ollama
 
-## 📂 Topics
+## 🤖 AI Technology
+
+This project uses:
+
+- Python
+- Ollama
+- Llama 3.2
+
+The AI runs locally through Ollama instead of requiring a paid cloud API.
+
+## 📚 Supported Topics
 
 Currently supported:
 
 - Operating Systems
 - Data Structures
 - Python
+- C++
+- Java
+- DBMS
+- Computer Networks
+- Algorithms
 
-## 🛠️ Technologies
+## 🛠️ Tech Stack
 
-- Python
-- Git
-- GitHub
+| Technology | Purpose |
+|---|---|
+| Python | Application development |
+| Ollama | Local AI runtime |
+| Llama 3.2 | AI model |
+| Git | Version control |
+| GitHub | Project hosting |
 
-## ▶️ How to Run
+## 📂 Project Structure
 
-Clone the repository:
-
-```bash
-git clone https://github.com/divyanshtomar2006-prog/ai-study-assistant.git
+```text
+ai-study-assistant/
+│
+├── app.py
+├── ai.py
+├── study_data.py
+├── progress.py
+├── achievements.py
+├── notes_manager.py
+├── .gitignore
+├── README.md
+│
+└── notes/
