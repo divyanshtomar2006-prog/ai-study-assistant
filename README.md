@@ -60,7 +60,6 @@ Llama 3.2
   ↓
 AI Response
 
-Absolutely. 🔥 Replace the entire contents of your current README.md with this:
 
 # 🤖 AI Study Assistant
 
