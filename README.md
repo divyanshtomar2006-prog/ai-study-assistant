@@ -1,8 +1,9 @@
 ## Demo
 
-![AI Study Assistant](screenshot.png)
+![AI Study Assistant]
 
-# 📚 AI Study Assistant
+# 📚 AI Study Assistant <img width="367" height="349" alt="Screenshot 2026-09-06 121617" src="https://github.com/user-attachments/assets/e98bf5f8-69ac-4abd-a610-ee511f8c0fc0" />
+
 
 A beginner-friendly AI-powered study assistant built with Python and a local Llama 3.2 model.
 
