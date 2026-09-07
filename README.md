@@ -2,12 +2,11 @@
 
 An AI-powered command-line study assistant built with Python and local AI.
 
-It helps students study technical subjects through AI explanations, revision notes, questions, quizzes, progress tracking, achievements, and saved notes.
+It helps students study technical subjects through AI explanations, revision notes, practice questions, quizzes, progress tracking, achievements, and saved notes.
 
 ## 📸 Demo
 
-![AI Study Assistant]( <img width="367" height="349" alt="Screenshot 2026-09-06 121617" src="https://github.com/user-attachments/assets/39a685f2-d9b5-4c0a-95cc-bc1aadf9be3c" />
-)
+![AI Study Assistant](Screenshot%202026-09-06%20121617.png)
 
 ---
 
@@ -20,9 +19,10 @@ It helps students study technical subjects through AI explanations, revision not
 - 🧠 **AI Quiz Mode** — Test your understanding
 - 📊 **Study Dashboard** — Track quiz performance
 - 🏆 **Achievements** — Unlock badges as you study
-- 📖 **Topic Progress** — See your strongest and weakest topics
+- 📈 **Topic Progress** — Track performance across subjects
+- 📅 **AI Study Planner** — Generate study plans based on your subjects and goals
 - 💾 **Save Notes** — Store generated notes locally
-- 🔒 **Local AI** — Uses Ollama, so AI runs locally on your computer
+- 🔒 **Local AI** — Run AI features locally using Ollama
 
 ---
 
@@ -45,7 +45,7 @@ The current version includes:
 
 The project uses **Ollama** to run the Llama 3.2 model locally.
 
-Instead of sending study questions to a cloud API, the application communicates with the locally running AI model.
+Instead of relying on a cloud AI API, the application communicates with the locally running model.
 
 ```text
 User
@@ -60,73 +60,12 @@ Llama 3.2
   ↓
 AI Response
 
-
-# 🤖 AI Study Assistant
-
-An AI-powered command-line study assistant built with Python and local AI.
-
-It helps students study technical subjects through AI explanations, revision notes, questions, quizzes, progress tracking, achievements, and saved notes.
-
-## 📸 Demo
-
-![AI Study Assistant](screenshot.png)
-
----
-
-## ✨ Features
-
-- 🤖 **Ask AI** — Get simple explanations for difficult concepts
-- 📝 **AI Notes Generator** — Generate concise, exam-friendly revision notes
-- ❓ **AI Question Generator** — Generate practice questions
-- 📚 **Key Points** — Quickly review important concepts
-- 🧠 **AI Quiz Mode** — Test your understanding
-- 📊 **Study Dashboard** — Track quiz performance
-- 🏆 **Achievements** — Unlock badges as you study
-- 📖 **Topic Progress** — See your strongest and weakest topics
-- 💾 **Save Notes** — Store generated notes locally
-- 🔒 **Local AI** — Uses Ollama, so AI runs locally on your computer
-
----
-
-## 📚 Available Topics
-
-The current version includes:
-
-- Operating Systems
-- Data Structures
-- Python
-- C++
-- Java
-- DBMS
-- Computer Networks
-- Algorithms
-
----
-
-## 🧠 How the AI Works
-
-The project uses **Ollama** to run the Llama 3.2 model locally.
-
-Instead of sending study questions to a cloud API, the application communicates with the locally running AI model.
-
-```text
-User
-  ↓
-AI Study Assistant
-  ↓
-Python Application
-  ↓
-Ollama
-  ↓
-Llama 3.2
-  ↓
-AI Response
 🛠️ Tech Stack
 Technology	Purpose
 Python	Application logic
 Ollama	Local AI runtime
 Llama 3.2	AI model
-JSON	Progress storage
+JSON	Progress and data storage
 Git	Version control
 GitHub	Source code hosting
 📁 Project Structure
@@ -135,16 +74,18 @@ ai-study-assistant/
 ├── app.py
 ├── ai.py
 ├── study_data.py
+├── study_planner.py
 ├── progress.py
 ├── achievements.py
 ├── notes_manager.py
+│
 ├── requirements.txt
-├── screenshot.png
 ├── README.md
-│
-├── notes/
-│
-└── .gitignore
+├── .gitignore
+└── Screenshot 2026-09-06 121617.png
+
+Local/generated files such as progress.json, notes/, .venv/, and Python cache files are excluded using .gitignore.
+
 🚀 Installation
 1. Clone the repository
 git clone https://github.com/divyanshtomar2006-prog/ai-study-assistant.git
@@ -153,7 +94,9 @@ cd ai-study-assistant
 3. Create a virtual environment
 python -m venv .venv
 4. Activate the virtual environment
-Windows
+
+Windows:
+
 .venv\Scripts\activate
 5. Install dependencies
 pip install -r requirements.txt
@@ -173,7 +116,7 @@ From the project directory:
 
 python app.py
 
-The application will display the available study topics.
+The application will display the available study topics and features.
 
 Choose a topic and select the feature you want to use.
 
@@ -186,13 +129,13 @@ Best score
 Average score
 Topic-wise performance
 Strongest topic
-Topic needing more practice
+Topics needing more practice
 
 Progress is stored locally in:
 
 progress.json
 
-progress.json is ignored by Git so personal study progress isn't uploaded to the repository.
+This file is ignored by Git so personal study progress isn't uploaded to the repository.
 
 🏆 Achievements
 
@@ -212,11 +155,11 @@ Saved notes are stored inside:
 
 notes/
 
-Each topic gets its own text file for easy revision.
+The notes/ directory is excluded from Git because it contains locally generated study material.
 
 🎯 Project Goals
 
-This project was created to combine:
+This project combines:
 
 Python programming
 AI integration
@@ -230,9 +173,8 @@ The goal is to continuously improve the application while learning AI and softwa
 
 🔮 Future Improvements
 
-Planned features include:
+Planned improvements include:
 
-📅 AI Study Planner
 🎯 Personalized study recommendations
 📈 Better progress visualizations
 🧪 More quiz question types
@@ -243,9 +185,9 @@ Planned features include:
 📚 More academic subjects
 📌 Current Status
 
-Version: 1.0
+Version: 1.1
 
-The current version supports local AI-powered explanations, notes, questions, quizzes, progress tracking, achievements, and saved notes.
+The current version supports local AI-powered explanations, notes, questions, quizzes, study planning, progress tracking, achievements, and saved notes.
 
 👨‍💻 Author
 
