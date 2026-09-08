@@ -60,7 +60,9 @@ Llama 3.2
   ↓
 AI Response
 
-🛠️ Tech Stack
+```
+
+## 🛠️ Tech Stack
 Technology	Purpose
 Python	Application logic
 Ollama	Local AI runtime
