@@ -2,7 +2,9 @@
 
 An AI-powered command-line study assistant built with Python and local AI.
 
-It helps students study technical subjects through AI explanations, revision notes, practice questions, quizzes, progress tracking, achievements, and saved notes.
+It helps students study technical subjects through AI explanations, revision notes, practice questions, quizzes, progress tracking, achievements, study planning, and saved notes.
+
+---
 
 ## 📸 Demo
 
@@ -20,7 +22,7 @@ It helps students study technical subjects through AI explanations, revision not
 - 📊 **Study Dashboard** — Track quiz performance
 - 🏆 **Achievements** — Unlock badges as you study
 - 📈 **Topic Progress** — Track performance across subjects
-- 📅 **AI Study Planner** — Generate study plans based on your subjects and goals
+- 📅 **AI Study Planner** — Generate study plans based on subjects and goals
 - 💾 **Save Notes** — Store generated notes locally
 - 🔒 **Local AI** — Run AI features locally using Ollama
 
@@ -59,18 +61,26 @@ Ollama
 Llama 3.2
   ↓
 AI Response
-
 ```
 
+---
+
 ## 🛠️ Tech Stack
-Technology	Purpose
-Python	Application logic
-Ollama	Local AI runtime
-Llama 3.2	AI model
-JSON	Progress and data storage
-Git	Version control
-GitHub	Source code hosting
-📁 Project Structure
+
+| Technology | Purpose |
+|---|---|
+| Python | Application logic |
+| Ollama | Local AI runtime |
+| Llama 3.2 | AI model |
+| JSON | Progress and data storage |
+| Git | Version control |
+| GitHub | Source code hosting |
+
+---
+
+## 📁 Project Structure
+
+```text
 ai-study-assistant/
 │
 ├── app.py
@@ -85,118 +95,181 @@ ai-study-assistant/
 ├── README.md
 ├── .gitignore
 └── Screenshot 2026-09-06 121617.png
+```
 
-Local/generated files such as progress.json, notes/, .venv/, and Python cache files are excluded using .gitignore.
+Local/generated files such as `progress.json`, `notes/`, `.venv/`, and Python cache files are excluded using `.gitignore`.
 
-🚀 Installation
-1. Clone the repository
+---
+
+## 🚀 Installation
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/divyanshtomar2006-prog/ai-study-assistant.git
-2. Open the project folder
+```
+
+### 2. Open the project folder
+
+```bash
 cd ai-study-assistant
-3. Create a virtual environment
+```
+
+### 3. Create a virtual environment
+
+```bash
 python -m venv .venv
-4. Activate the virtual environment
+```
 
-Windows:
+### 4. Activate the virtual environment
 
+**Windows:**
+
+```powershell
 .venv\Scripts\activate
-5. Install dependencies
-pip install -r requirements.txt
-🤖 Set Up Local AI
+```
 
-Install Ollama and download the Llama 3.2 model.
+### 5. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🤖 Set Up Local AI
+
+Install **Ollama** and download the Llama 3.2 model.
 
 Then run:
 
+```bash
 ollama run llama3.2
+```
 
 Keep Ollama running while using the AI features.
 
-▶️ Run the Application
+---
+
+## ▶️ Run the Application
 
 From the project directory:
 
+```bash
 python app.py
+```
 
 The application will display the available study topics and features.
 
 Choose a topic and select the feature you want to use.
 
-📊 Study Dashboard
+---
+
+## 📊 Study Dashboard
 
 The application tracks:
 
-Total quizzes completed
-Best score
-Average score
-Topic-wise performance
-Strongest topic
-Topics needing more practice
+- Total quizzes completed
+- Best score
+- Average score
+- Topic-wise performance
+- Strongest topic
+- Topics needing more practice
 
 Progress is stored locally in:
 
+```text
 progress.json
+```
 
 This file is ignored by Git so personal study progress isn't uploaded to the repository.
 
-🏆 Achievements
+---
+
+## 🏆 Achievements
 
 The application currently includes achievements such as:
 
-Achievement	Requirement
-🥉 First Step	Complete your first quiz
-🔥 Getting Serious	Complete 3 quizzes
-🏆 Perfect Mind	Score 100%
-📚 Knowledge Seeker	Study 5 different topics
-💯 Century Club	Answer 100 questions
-💾 Saved Notes
+| Achievement | Requirement |
+|---|---|
+| 🥉 First Step | Complete your first quiz |
+| 🔥 Getting Serious | Complete 3 quizzes |
+| 🏆 Perfect Mind | Score 100% |
+| 📚 Knowledge Seeker | Study 5 different topics |
+| 💯 Century Club | Answer 100 questions |
+
+---
+
+## 💾 Saved Notes
 
 Generated AI notes can be saved locally.
 
 Saved notes are stored inside:
 
+```text
 notes/
+```
 
-The notes/ directory is excluded from Git because it contains locally generated study material.
+The `notes/` directory is excluded from Git because it contains locally generated study material.
 
-🎯 Project Goals
+---
+
+## 🎯 Project Goals
 
 This project combines:
 
-Python programming
-AI integration
-Local AI models
-File handling
-JSON data storage
-Git and GitHub
-Basic software architecture
+- Python programming
+- AI integration
+- Local AI models
+- File handling
+- JSON data storage
+- Git and GitHub
+- Basic software architecture
 
 The goal is to continuously improve the application while learning AI and software development.
 
-🔮 Future Improvements
+---
+
+## 🔮 Future Improvements
 
 Planned improvements include:
 
-🎯 Personalized study recommendations
-📈 Better progress visualizations
-🧪 More quiz question types
-🔍 Search across study topics
-🌐 Web-based interface
-📱 Mobile-friendly version
-🎤 Voice-based study assistant
-📚 More academic subjects
-📌 Current Status
+- 🎯 Personalized study recommendations
+- 📈 Better progress visualizations
+- 🧪 More quiz question types
+- 🔍 Search across study topics
+- 🌐 Web-based interface
+- 📱 Mobile-friendly version
+- 🎤 Voice-based study assistant
+- 📚 More academic subjects
 
-Version: 1.1
+---
 
-The current version supports local AI-powered explanations, notes, questions, quizzes, study planning, progress tracking, achievements, and saved notes.
+## 📌 Current Status
 
-👨‍💻 Author
+**Version:** 1.1
 
-Divyansh Tomar
+The current version supports:
+
+- Local AI-powered explanations
+- AI-generated notes
+- AI-generated questions
+- Quizzes
+- AI study planning
+- Progress tracking
+- Achievements
+- Saved notes
+
+---
+
+## 👨‍💻 Author
+
+**Divyansh Tomar**
 
 Built as a learning project while exploring:
 
-Python • AI • Local LLMs • GitHub • Software Development
+**Python • AI • Local LLMs • GitHub • Software Development**
+
+---
 
 ⭐ If you find this project interesting, consider giving the repository a star!
